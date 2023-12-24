@@ -1,12 +1,15 @@
 package spring.example.dataAccess.abstracts;
 
-import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import spring.example.entities.concretes.Brand;
 
-public interface BrandRepository {
+public interface BrandRepository extends JpaRepository<Brand, Integer>//ID Integera karşılık geliyor 
+{
 	//veri tabanı işlemleri
-	List<Brand> getAll();//getAll'ı çağrılarak markalar listelenir
+	
 	
 }
+
+//BTK ileri java spring kısımları izle

@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import spring.example.business.abstracts.BrandService;
-import spring.example.entities.concretes.Brand;
+import spring.example.business.requests.CreateBrandRequest;
+import spring.example.business.responses.GetAllBrandResponse;
 
 @RestController //annotation derlenirken restcontrollerı araıyor
 @RequestMapping("/api/brands")//adresleme
@@ -23,7 +25,12 @@ public class BrandsController { // istek controllera yapılıyor
 	}
 	
 	@GetMapping("/getall")
-	public List<Brand> getAll(){
+	public List<GetAllBrandResponse> getAll(){
 		return brandService.getAll();
+	}
+	
+	@PostMapping("/add")
+	public void add(CreateBrandRequest createBrandRequest) {
+		this.brandService.add(createBrandRequest);
 	}
 }
