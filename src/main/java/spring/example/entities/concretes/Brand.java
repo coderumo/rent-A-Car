@@ -12,23 +12,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Table(name="brands")
-@Getter //sadece getter olmasını istemezsek @Data yazarız
+@Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor//parametresiz constructor
 @Entity //db varlığı tablo karşılığı
 public class Brand { //tabloya karşılık gelecek class
-	
 	@Id//db de PK olduğunu belirtir
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//Id otomatik artık
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="name")// db de name'e karşılık geliyor
-	private String name;
+	@Column(name="marka")// db de name'e karşılık geliyor
+	private String marka;
 	
-	@Column(name="lastName")
-	private String lastName;
+	@Column(name="model")
+	private String model;
 	
 	
 }

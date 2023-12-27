@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import spring.example.entities.concretes.Brand;
 
-public interface BrandRepository extends JpaRepository<Brand, Integer>//ID Integera karşılık geliyor 
+public interface BrandRepository extends JpaRepository<Brand, Integer>//pk Integera karşılık geliyor 
 {
 	//veri tabanı işlemleri
 	

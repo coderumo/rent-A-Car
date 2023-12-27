@@ -1,5 +1,4 @@
-package spring.example.business.requests;
-
+package spring.example.business.responses;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +6,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CreateBrandRequest {
+public class GetByIdBrandResponse {
+	private int id;
 	private String marka;
 	private String model;
-	
 }

@@ -1,6 +1,7 @@
 package spring.example.business.responses;
 
 import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GetAllBrandResponse {
 	private int id;
-	private String name;
-	private String lastName;
+	private String marka;
+	private String model;
 
 }
