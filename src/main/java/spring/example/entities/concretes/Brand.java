@@ -20,6 +20,7 @@ import lombok.Setter;
 public class Brand { //tabloya karşılık gelecek class
 	@Id//db de PK olduğunu belirtir
 	@GeneratedValue(strategy = GenerationType.IDENTITY)//Id otomatik artık
+	
 	@Column(name="id")
 	private int id;
 	
@@ -28,7 +29,6 @@ public class Brand { //tabloya karşılık gelecek class
 	
 	@Column(name="model")
 	private String model;
-	
 	
 }
 

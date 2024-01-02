@@ -51,10 +51,8 @@ public class BrandManager implements BrandService {
 
 	@Override
 	public void add(CreateBrandRequest createBrandRequest) {//dbye kayıt ekleme
-		
 //		Brand brand = new Brand();
 //		brand.setMarka(createBrandRequest.getMarka());
-		
 		Brand brand = this.modelMapperService.forRequest().map(createBrandRequest, Brand.class);//createBrandRequestim var brand tipine çevir diyoz.
 		this.brandRepository.save(brand);
 	}

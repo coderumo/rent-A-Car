@@ -9,7 +9,6 @@ public interface BrandRepository extends JpaRepository<Brand, Integer>//pk Integ
 {
 	//veri tabanı işlemleri
 	
-	
 }
 
 //BTK ileri java spring kısımları izle
