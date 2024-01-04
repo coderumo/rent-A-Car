@@ -2,6 +2,7 @@ package spring.example.business.abstracts;
 
 import java.util.List;
 
+
 import spring.example.business.requests.CreateBrandRequest;
 import spring.example.business.requests.UpdateBrandRequest;
 import spring.example.business.responses.GetAllBrandResponse;
@@ -14,4 +15,5 @@ public interface BrandService {
 	void add(CreateBrandRequest createBrandRequest);
 	void update(UpdateBrandRequest updateBrandRequest);
 	void delete(int id);
+	
 }
